@@ -65,6 +65,79 @@
     <img src="assets/continuum_with_dendrocores.png">
 </section>
 
+<section>
+    <div>Hand-selected cores</div>
+    <img src="assets/continuum_north_zoom_TB_cores.png">
+</section>
+
+<section>
+    <div>Dendrogram-selected cores</div>
+    <img src="assets/continuum_north_zoom_TB_dendrocores.png">
+</section>
+
+<section>
+    <h2>Source Photometry (Section C.2)</h2>
+    <div align=left>Contour-based photometry is not great for core or protostar analysis:</div>
+    <ul><li>Can't compare contour-based to hand-extracted </li>
+        <li>Can't (shouldn't) use contours to extract from other wavelengths (e.g., free-free correction)</li>
+        <li>Contours require 'truncation correction' because they only go to
+        the specified noise threshold, but signal goes all the way down</li>
+    </ul>
+    <div align=left>So, we use circular apertures.</div>
+    <ul><li>Multiple apertures yield a radial profile</li>
+        <li>"Concentration" is a measure of source structure</li>
+    </ul>
+</section>
+
+<section>
+    <img src="assets/concentrationparameter.png">
+</section>
+
+<section>
+    <h6>Free-free contamination measurement</h6>
+    <img src="assets/mm_vs_cm_flux_0.4arcsec_apertures.png">
+</section>
+
+<section>
+    <h6> Temperature Inference </h6>
+    <div align=left>Interpolation of HiGal data does poorly; hot (~100-200K sources dominate)</div>
+    <div align=left>Fred will tell us about PPMAP later?</div>
+    <div align=left>Used line \(T_B\) to get lower-limit temperature:</div>
+    <ul><li>Assuming dust &amp; gas are mixed, \(T_{dust}\geq T_{B,max}\)
+        </li>
+        <li>For each source, extract spectrum across full band</li>
+        <li>Fits to each line for each source, bad ones rejected</li>
+    </ul>
+</section>
+
+<section>
+    <img src='assets/ALMAmm37_linefits.png'>
+    <img src='assets/ALMAmm32_linefits.png'>
+</section>
+
+<section>
+    Effect of adopting temperature peak
+    <img src="assets/aperture_mass20K_vs_massTB.png">
+</section>
+
+<section>
+    Which species is dominant?
+    <img src="assets/brightest_line_histogram.png">
+</section>
+
+<section>
+    <img src="assets/ALMAmm32_overlaid_spectra_7m12m_hires.png">
+</section>
+
+<section>
+    <h6>Spatial and Spectral distribution</h6>
+    <img src="assets/core_spatial_distribution.png">
+</section>
+
+<section>
+    <div>Sources are extended: What constitutes a 'core'?</div>
+    <img src="assets/core_flux_histogram_apertureradius.png">
+</section>
 
       </div>
     </div>
