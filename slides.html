@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>High mass star cluster formation</title>
+    <meta name="viewport"
+	  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="white.css" id="theme">
+    <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+    <link rel="stylesheet" href="custom.css" id="custom-theme">
+    <script>
+      document.write('<link rel="stylesheet" href="reveal/css/print/'+(window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper')+'.css" type="text/css" media="print">');
+    </script>
+    <!--[if lt IE 9]>
+    <script src="reveal/lib/js/html5shiv.js">
+    </script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Slides! -->
+
+    <div class="reveal">
+      <div class="slides">
+
+
+
+<section>
+    <h2> The compact mm sources of W51 and Sgr B2</h2>
+    <div> and what this suggests for analysis of ALMA-IMF
+    </div>
+
+    <div>
+    Adam Ginsburg
+</div>
+</section>
+
+<section>
+    <h2>Source Extraction</h2>
+    <div class=smaller>Two methods were explored in <a href="http://adsabs.harvard.edu/abs/2017ApJ...842...92G">Ginsburg+ 2017</a> section 3.1.1:</div>
+    <ul><li> Dendrogram extraction:
+    </li>
+    <ul><li>Automated, reproducible </li>
+        <li>Problematic for extended structures we're not interested in (HII regions)</li>
+        <li>Difficult to use if noise varies (e.g., if bright sources produce noisy sub-fields)</li>
+    </ul>
+    <li>Hand extraction</li>
+    <ul><li>Mildly tedious, unreproducible (e.g., on simulations)</li>
+        <li>Reliable: sources are real if you say they are</li>
+        <li>Difficult to estimate completeness</li>
+    </ul>
+
+</ul>
+
+</section>
+
+<section>
+    <div>Hand-selected cores</div>
+    <img src="assets/continuum_with_cores.png">
+</section>
+
+<section>
+    <div>Dendrogram-selected cores</div>
+    <img src="assets/continuum_with_dendrocores.png">
+</section>
+
+
+      </div>
+    </div>
+
+    <!-- End of slides. -->
+
+<script src="reveal/lib/js/head.min.js"> </script>
+<script src="reveal/js/reveal.min.js"> </script>
+<script src="pdfjs/compatibility.js"> </script>
+<script src="pdfjs/pdf.js"> </script>
+<script src="fullscreen.js"> </script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: false,
+        history: true,
+        center: false,
+        keyboard: true,
+        touch: false,
+        overview: true,
+        mouseWheel: false,
+        width: 1024,
+        height: 768,
+        maxScale: 10,
+        margin: 0.0,
+
+        theme: false, // hardcoded with CSS import in <head>
+        transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+        transitionSpeed: 'default', // default/fast/slow
+
+        math: {
+          //mathjax: 'mathjax/MathJax.js',
+          //config: 'TeX-AMS_HTML-full',
+          mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+          config: 'TeX-AMS_SVG'
+        },
+
+        dependencies: [
+          { src: 'reveal/lib/js/classList.js',
+	    condition: function() { return !document.body.classList; }},
+          { src: 'reveal/plugin/markdown/marked.js',
+	    condition: function() { return !!document.querySelector ('[data-markdown]'); }},
+          { src: 'reveal/plugin/markdown/markdown.js',
+	    condition: function() { return !!document.querySelector ('[data-markdown]'); }},
+          { src: 'reveal/plugin/highlight/highlight.js', async: true,
+	    callback: function() { hljs.initHighlightingOnLoad (); }},
+          { src: 'reveal/plugin/notes/notes.js', async: true,
+	    condition: function() { return !!document.body.classList; }},
+          { src: 'mymath.js', async: true },
+	  { src: 'pdfimgs.js', async: true },
+	  { src: 'slideautostart.js', async: true },
+        ],
+      });
+    </script>
+  </body>
+</html>
